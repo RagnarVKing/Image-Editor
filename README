@@ -1,0 +1,16 @@
+#Copyright 311CA_EftenieAndrei-Vlad_Tema3
+
+Programul incarca in memorie o poza de tip PPM sau PGM, pe care aplica cateva schimbari si o salveaza.(P.S. o editeaza) Pentru poza de tip PGM este capabil sa calculeze histograma imaginii, sa egalizeze imaginea si sa taie o portiune din imagine. Pentru poza de tip PPM este capabil sa taie o portiune din aceasta si sa aplice cateva formate de imagini pe aceasta.
+
+Comanda "LOAD" aloca memorie pentru a citi dintr-un fisier o imagine de tip P2(grayscale ascii), P3(color ascii), P5(grayscale binar) sau P6(color binar) si o autoselecteaza.
+Comanda "SELECT" selecteaza o zona dintr-o imagine pe care ulterior se vor aplica alte comenzi.
+Comanda "SELECT ALL" selecteaza toata imaginea pe care ulterior se vor aplica alte comenzi.
+Comanda "HISTOGRAM" se poate aplica doar pe o imagine de tip PGM(grayscale). Aceasta afiseaza intr-o histograma diferentele de valori
+ale pixelilor.
+Comanda "EQUALIZE" se poate aplica doar pe o imagine de tip PGM(grayscale). Aceasta egalizeaza nivelul de lumina al pixelilor.
+Comanda "CROP" taie o portiune din imagine, ulterior ramanand sa aplice alte comenzi doar pe acea portiune.
+Comanda "APPLY" se poate aplica doar pe o imagine de tip PPM(color). Aceasta aplica efectele "EDGE", "SHARPEN", "BLUR" sau "GAUSSIAN BLUR"
+pe imagine. EDGE - ul innegreste pixelii imaginii, SHARPEN - ul accentueaza pixelii imaginii, BLUR - ul blureaza cu o intesitate mare pixelii imaginii, iar GAUSSIAN BLUR - ul blureaza cu o intensitate mica pixelii imaginii.
+Comanda "SAVE" salveaza imaginea editata intr-un fisier. Aceasta este capabila sa salveze orice tip de imagine si in forma ASCII si in forma
+BINAR.
+Comanda "EXIT" dealoca toata memoria folosita si iese din program.
